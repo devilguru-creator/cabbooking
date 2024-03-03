@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <body style="background-image: url('images/testimonial\ back.png');">
+    <title>Confirmation</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        div {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #050505;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #111112;
+            font-weight: bold;
+            display: block;
+            margin-top: 20px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <script>
+            // Get the values from the URL query parameters
+            const urlParams = new URLSearchParams(window.location.search);
+            const pickupLocation = urlParams.get('pickupLocation');
+            const dropoffLocation = urlParams.get('dropoffLocation');
+            const date = urlParams.get('date');
+            const time = urlParams.get('time');
+            
+            // Display the values on the page
+            document.write('<h2>Booking Confirmation</h2>');
+            document.write('<p>Pickup Location: ' + pickupLocation + '</p>');
+            document.write('<p>Drop-off Location: ' + dropoffLocation + '</p>');
+            document.write('<p>Date: ' + date + '</p>');
+            document.write('<p>Time: ' + time + '</p>');
+
+            // Add a link to return to the home page
+            document.write('<a href="index.html">Return to Home Page</a>');
+        </script>
+    </div>
+
+</body>
+</body>
+</html>

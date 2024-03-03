@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <body style="background-image: url('images/testimonial\ back.png');">
+    <title>Gallery</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: right;
+        }
+
+        nav {
+            display: inline-block;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 5px;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+        <a href="Gallery.html">Gallery</a>
+        <a href="Blog.html">Blog</a>
+        <a href="About Us.html">About</a>
+        <a href="Contact.html">Contact</a>
+        </nav>
+    </header>
+
+  
+
+</body>
+</html>
+
+
+
+
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cab Booking Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .gallery img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            margin: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .gallery img:hover {
+            border: 1px solid #777;
+        }
+
+        .caption {
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Cab Booking Gallery & Reviews</h1>
+
+    <div class="gallery">
+        <div>
+            <img src="images/cab1.jpg" alt="Cab Image 1" onclick="openModal('Cab Image 1', 'Modern cab interior with comfortable seats.')">
+        </div>
+        <div>
+            <img src="images/cab2.jpg" alt="Cab Image 2" onclick="openModal('Cab Image 2', 'City taxi on the street with blurred traffic lights in the background.')">
+        </div>
+        <div>
+            <img src="images/cab3.jpg" alt="Cab Image 3" onclick="openModal('Cab Image 3', 'Yellow taxi cab in a urban setting with tall buildings in the background.')">
+        </div>
+        <div>
+            <img src="images/carmain.png" alt="Cab Image 3" onclick="openModal('Cab Image 4', 'Yellow taxi cab in a urban setting with tall buildings in the background.')">
+        </div>
+        
+    </div>
+
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImg" src="" alt="Modal Image">
+        <div id="caption" class="caption"></div>
+    </div>
+
+    <script>
+        function openModal(caption, description) {
+            var modal = document.getElementById("myModal");
+            var modalImg = document.getElementById("modalImg");
+            var captionText = document.getElementById("caption");
+
+            modal.style.display = "block";
+            modalImg.src = event.target.src;
+            captionText.innerHTML = "<strong>" + caption + "</strong><br>" + description;
+        }
+
+        function closeModal() {
+            var modal = document.getElementById("myModal");
+            modal.style.display = "none";
+        }
+    </script>
+
+</body>
+</html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #fff;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .gallery img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            margin: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .gallery img:hover {
+            border: 1px solid #777;
+        }
+
+        .caption {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .testimonial {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 20px 0;
+        }
+
+        .testimonial p {
+            font-style: italic;
+            margin: 0;
+        }
+
+        .testimonial-author {
+            text-align: right;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    
+
+    <div class="gallery">
+        <!-- Your gallery images here -->
+    </div>
+
+    <div class="testimonial">
+        <p>"I had a fantastic cab ride experience! The driver was punctual, the cab was clean, and the service was excellent."</p>
+        <div class="testimonial-author">- Happy Customer, John Doe</div>
+    </div>
+
+    <div class="testimonial">
+        <p>"The cab arrived right on time, and the driver was friendly and professional. I highly recommend this cab service!"</p>
+        <div class="testimonial-author">- Satisfied Rider, Jane Smith</div>
+    </div>
+
+    <!-- Add more testimonials as needed -->
+
+    <script>
+        // Your existing script for the image gallery can be placed here
+    </script>
+
+</body>
+</body>
+</html>
+
